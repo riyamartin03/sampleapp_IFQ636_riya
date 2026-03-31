@@ -1,4 +1,4 @@
-
+const taskRoutes = require("./routes/taskRoutes");
 const express = require('express');
 const dotenv = require('dotenv');
 const cors = require('cors');
@@ -12,7 +12,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use('/api/auth', require('./routes/authRoutes'));
-//app.use('/api/tasks', require('./routes/taskRoutes'));
+app.use("/api/tasks", taskRoutes);
 
 // Export the app object for testing
 if (require.main === module) {
