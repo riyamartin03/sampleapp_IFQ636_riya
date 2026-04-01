@@ -1,24 +1,64 @@
+# 🚴 RIDEO Bike Rental System
 
-**Assessment 1.2 (Total Marks **20**)**
+## 📌 Overview
+RIDEO Bike Rental System is a full-stack web application developed as part of IFN636 Assessment 1.2.  
+This project extends a starter authentication system by implementing CRUD (Create, Read, Update, Delete) functionality.
 
-Assignment: **Software requirements analysis and design (**Full-Stack CRUD Application Development with DevOps Practices**)**
-
-
----
-
-**Objective**
-
-For this assessment, you have already been assigned a project. Your task is to develop a system that implements CRUD (Create, Read, Update, Delete) operations based on the selected project. The system should include both a user panel and an admin panel. Depending on the nature of your chosen project, you may decide how many CRUD operations are required to support the functionality of the system. You have been provided with a starter project that includes user authentication using Node.js, React.js, and MongoDB, your should extend this application based on your assigned project requirements. Ensure that the implemented features are appropriate and meaningful for your selected project. Your project should include the following:
-In this assignment you will complete the following tasks:
-
-* **Basic Version Control using GitHub**
-* **Development, CI/CD Integration for Automated Deployment**
-* **Project report**
-
- 
----
-
-**GitHub link of the starter project: **[https://github.com/nahaQUT/sampleapp_IFQ636.git](https://github.com/nahaQUT/sampleapp_IFQ636.git)
+The system allows users to manage bike rental-related data through a web interface.
 
 ---
 
+## 🛠️ Technologies Used
+
+### Frontend
+- React.js
+- JavaScript
+- CSS
+
+### Backend
+- Node.js
+- Express.js
+
+### Database
+- MongoDB Atlas
+
+### Deployment
+- AWS EC2
+
+### Version Control
+- Git & GitHub
+
+---
+
+## ⚙️ Features Implemented
+
+- User Authentication (provided in starter project)
+- Create tasks / entries
+- View tasks
+- Update tasks
+- Delete tasks
+- Full-stack integration (Frontend ↔ Backend ↔ Database)
+
+---
+
+## 📂 Project Structure
+## 🚀 How to Run the Project
+
+### 1. Clone Repository
+git clone https://github.com/riyamartin03/sampleapp_IFQ636_riya.git
+cd sampleapp_IFQ636_riya
+
+### 2. Backend Setup
+cd backend
+npm install
+npm start
+
+### 3. Frontend Setup
+cd frontend
+npm install
+npm start
+## 🌐 Project URL
+Running on AWS EC2 (demonstrated during tutorial)
+## 🔐 Login Details
+Username: testuser
+Password: test123
