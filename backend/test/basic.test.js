@@ -1,4 +1,4 @@
-import { expect } from 'chai';
+const { expect } = require('chai');
 
 describe('Basic Test Suite', () => {
   it('should return true', () => {

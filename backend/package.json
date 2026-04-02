@@ -1,7 +1,6 @@
 {
   "name": "task-manager-backend",
   "version": "1.0.0",
-"type": "module",
   "description": "Backend for Task Manager App",
   "main": "server.js",
   "scripts": {
@@ -21,7 +20,7 @@
     "request": "^2.88.2"
   },
   "devDependencies": {
-    "chai": "^6.2.2",
+    "chai": "^4.3.10",
     "esm": "^3.2.25",
     "mocha": "^11.7.5",
     "nodemon": "^2.0.15",
