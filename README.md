@@ -1,10 +1,10 @@
-# 🚴 RIDEO Bike Rental System
+# 💻 IFN636 Task Manager System
 
 ## 📌 Overview
-RIDEO Bike Rental System is a full-stack web application developed as part of IFN636 Assessment 1.2.  
-This project extends a starter authentication system by implementing CRUD (Create, Read, Update, Delete) functionality.
 
-The system allows users to manage bike rental-related data through a web interface.
+This project is a full-stack Task Manager web application developed as part of IFN636 **Assessment 1.2.**
+
+The application extends a starter authentication system by implementing CRUD (Create, Read, Update, Delete) functionality. It allows users to manage tasks through a web-based interface.
 
 ---
 
@@ -33,7 +33,7 @@ The system allows users to manage bike rental-related data through a web interfa
 ## ⚙️ Features Implemented
 
 - User Authentication (provided in starter project)
-- Create tasks / entries
+- Create tasks
 - View tasks
 - Update tasks
 - Delete tasks
@@ -42,9 +42,17 @@ The system allows users to manage bike rental-related data through a web interfa
 ---
 
 ## 📂 Project Structure
+
+- `/frontend` → React application  
+- `/backend` → Node.js + Express API  
+- `.github/workflows` → CI/CD pipeline  
+
+---
+
 ## 🚀 How to Run the Project
 
 ### 1. Clone Repository
+
 git clone https://github.com/riyamartin03/sampleapp_IFQ636_riya.git
 cd sampleapp_IFQ636_riya
 
@@ -57,6 +65,10 @@ npm start
 cd frontend
 npm install
 npm start
+
+cd backend
+npm test
+
 ## 🌐 Project URL
 Running on AWS EC2 (demonstrated during tutorial)
 ## 🔐 Login Details
