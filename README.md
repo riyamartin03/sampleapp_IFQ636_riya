@@ -74,3 +74,5 @@ Running on AWS EC2 (demonstrated during tutorial)
 ## 🔐 Login Details
 Username: testuser
 Password: test123
+
+Final update for IFN636 Assessment 1.2 submission.
