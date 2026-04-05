@@ -11,8 +11,8 @@ describe('Basic Test Suite', () => {
   });
 
   it('should check string equality', () => {
-    const appName = 'Task Manager';
-    expect(appName).to.equal('Task Manager');
+    const appName = 'Bike Rental';
+    expect(appName).to.equal('Bike Rental');
   });
 
   it('should confirm an array has the correct length', () => {

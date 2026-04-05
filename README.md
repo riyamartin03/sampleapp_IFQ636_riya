@@ -1,11 +1,10 @@
-# 💻 IFN636 Task Manager System
+# 💻 IFNN636 Bike Rental System
 
 ## 📌 Overview
 
-This project is a full-stack Task Manager web application developed as part of IFN636 **Assessment 1.2.**
+This project is a full-stack Bike Rental web application developed as part of IFN636 Assessment 1.2.
 
-The application extends a starter authentication system by implementing CRUD (Create, Read, Update, Delete) functionality. It allows users to manage tasks through a web-based interface.
-
+The application allows users to manage bike bookings (create, view, update, delete) through a web-based interface. It extends a starter authentication system and demonstrates full CRUD functionality with frontend, backend, and database integration.
 ---
 
 ## 🛠️ Technologies Used
@@ -33,10 +32,10 @@ The application extends a starter authentication system by implementing CRUD (Cr
 ## ⚙️ Features Implemented
 
 - User Authentication (provided in starter project)
-- Create tasks
-- View tasks
-- Update tasks
-- Delete tasks
+- Create bookings / entries
+- View bookings
+- Update booking
+- Delete booking
 - Full-stack integration (Frontend ↔ Backend ↔ Database)
 
 ---
@@ -75,4 +74,4 @@ Running on AWS EC2 (demonstrated during tutorial)
 Username: testuser
 Password: test123
 
-Final update for IFN636 Assessment 1.2 submission.
+

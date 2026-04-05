@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import axios from "axios";
 
-const API_BASE = "http://localhost:5001/api/tasks";
+const API_BASE = "http://15.135.220.242:5001/api/tasks";
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -11,7 +11,7 @@ function App() {
   const [editingId, setEditingId] = useState(null);
   const [message, setMessage] = useState("");
 
-  const token = localStorage.getItem("token");
+  const token = "demo-token";
 
   const authHeaders = {
     headers: {
@@ -41,7 +41,7 @@ function App() {
     e.preventDefault();
 
     if (!title.trim()) {
-      setMessage("Task title is required.");
+      setMessage("Enter Bike name. ");
       return;
     }
 
@@ -52,14 +52,14 @@ function App() {
           { title, description },
           authHeaders
         );
-        setMessage("Task updated successfully.");
+        setMessage("Booking updated successfully.");
       } else {
         await axios.post(
           API_BASE,
           { title, description },
           authHeaders
         );
-        setMessage("Task added successfully.");
+        setMessage("Booking added successfully.");
       }
 
       setTitle("");
@@ -98,17 +98,17 @@ function App() {
         <form className="task-form" onSubmit={handleSubmit}>
           <input
             type="text"
-            placeholder="Enter task title"
+            placeholder="Enter bike title"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
           />
           <textarea
-            placeholder="Enter task description"
+            placeholder="Enter bike description"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
           />
           <button type="submit">
-            {editingId ? "Update Task" : "Add Task"}
+            {editingId ? "Update Booking" : "Add Booking"}
           </button>
         </form>
 

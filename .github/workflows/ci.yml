@@ -2,13 +2,30 @@ name: Basic CI
 
 on:
   push:
-    branches: [ "feature-task-crud" ]
+    branches:
+      - main
+      - feature-task-crud
+  pull_request:
+    branches:
+      - main
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
-      - name: Install dependencies
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - name: Install backend dependencies
+        working-directory: ./backend
         run: npm install
+
+      - name: Run backend tests
+        working-directory: ./backend
+        run: npm test
